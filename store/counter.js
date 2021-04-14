@@ -7,7 +7,7 @@ export const state = () => ({
 
 // カウンター用のミューテート作成
 export const mutations = {
-  countUp: function(state){
+  countUp(state){
     state.counter++
   }
 }
