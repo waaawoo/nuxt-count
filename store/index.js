@@ -1,4 +1,4 @@
-import Vuex from vuex
+import Vuex from "vuex"
 
 const createStore = () => {
   return new Vuex.Store({
@@ -13,7 +13,11 @@ const createStore = () => {
       }
     },
     actions: {
-
+      upCountAction(num){
+        num.commit('upCount')
+      }
     }
   })
 }
+
+export default createStore

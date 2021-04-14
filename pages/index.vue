@@ -1,10 +1,19 @@
 <template>
-  <div class="container">
-  </div>
+<div>
+  <Count/>
+  <Count/>
+  <Count/>
+</div>
+
 </template>
 
 <script>
-export default {}
+import Count from "./countComponent.vue"
+export default {
+  components: {
+    Count
+  }
+}
 </script>
 
 <style>
